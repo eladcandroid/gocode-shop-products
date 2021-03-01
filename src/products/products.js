@@ -23,9 +23,9 @@ function Products() {
     ]
 
     return (
-        <>
-            {products.map(product => <ProductCard {...product} />)}
-        </>
+        <section className="products">
+        {products.map(product => <ProductCard {...product} />)}
+        </section>
     )
 }
 
