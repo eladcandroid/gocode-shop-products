@@ -1,5 +1,5 @@
 function ProductCard(props) {
-    const {image, title, price} = props
+    const {image, title, price, id} = props
     return (<div className="product-card">
         <div className="product-image">
             <img
@@ -7,7 +7,7 @@ function ProductCard(props) {
             />
         </div>
         <div className="product-info">
-            <h5>{title}</h5>
+            <a href={`product/${id}`}><h5>{title}</h5></a>
             <h6>${price}</h6>
         </div>
     </div>)

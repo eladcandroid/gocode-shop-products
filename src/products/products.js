@@ -6,7 +6,7 @@ function Products({products}) {
     const {selectedCategory} = useContext(Category)
     return (
         <section className="products">
-            {products.filter(product=>product.category === selectedCategory).map(product => <ProductCard {...{...product, key:product.id}} />)}
+            {products.filter(product=> !selectedCategory || (product.category === selectedCategory)).map(product => <ProductCard {...{...product, key:product.id}} />)}
         </section>
     )
 }
