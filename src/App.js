@@ -1,4 +1,3 @@
-import './App.css';
 import {Route,BrowserRouter as Router, Switch} from "react-router-dom";
 import Home from "./Home";
 import Product from "./product/product";
@@ -9,9 +8,7 @@ function App() {
                 <Route exact path="/">
                     <Home/>
                 </Route>
-
                 <Route exact path="/product/:id" children={  <Product/>}>
-
                 </Route>
             </Switch>
         </Router>
