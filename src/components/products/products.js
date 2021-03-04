@@ -1,6 +1,6 @@
-import ProductCard from "../components/product-card";
+import ProductCard from "../product-card";
 import {useContext} from "react";
-import {Category} from "../context/catrgory";
+import {Category} from "../../context/catrgory";
 
 function Products({products, minimumPrice, maximumPrice}) {
     const {selectedCategory} = useContext(Category)

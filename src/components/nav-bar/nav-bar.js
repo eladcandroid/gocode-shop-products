@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import {Category} from "../context/catrgory";
+import {Category} from "../../context/catrgory";
 import {Slider} from 'antd'
 function NavBar({categories, minimumPrice,maximumPrice, selectedMinimumPrice, selectedMaximumPrice}) {
     const {setSelectedCategory, setSelectedMinimumPrice, setSelectedMaximumPrice} = useContext(Category)
